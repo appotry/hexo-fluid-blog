@@ -55,7 +55,7 @@ web_analytics:  # 网页访问统计
     app_key: fUOlkXhD9wcmxOTed9NdlqPH
     # REST API 服务器地址，国际版不填
     # Only the Chinese mainland users need to set
-    server_url: https://lyt8mpsi.lc-cn-e1-shared.com
+    server_url: https://lyt8mpsi.lc-cn-n1-shared.com
 
 # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
 # Lazy loading of images on the page
@@ -96,8 +96,9 @@ navbar:
     - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - { key: 'community', link: '/community/', name: '社群', icon: 'iconfont icon-wechat2-fill' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
     - {
       key: '文档',
       icon: 'iconfont icon-books',
@@ -139,7 +140,7 @@ footer:
 # Index Page
 #---------------------------
 index:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/vdysjx.png?w=1920&fmt=webp  # 首页 Banner 头图，以下相同
+  banner_img: https://fluid.s3.bitiful.net/bg/vdysjx.png?w=1920&fmt=webp  # 首页 Banner 头图，以下相同
 
   # 首页副标题的独立设置
   # Independent config of home page subtitle
@@ -156,7 +157,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/dojm2h.png?w=1920&q=100&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/dojm2h.png?w=1920&q=100&fmt=webp
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -372,7 +373,7 @@ valine:
   lang: zh-CN
   highlight: true
   recordIP: true
-  serverURLs: https://lyt8mpsi.lc-cn-e1-shared.com
+  serverURLs: https://lyt8mpsi.lc-cn-n1-shared.com
 
 
 #---------------------------
@@ -380,7 +381,7 @@ valine:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/1cm6iu.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/1cm6iu.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -389,7 +390,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/sdqryn.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/sdqryn.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -398,7 +399,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/n7a9bv.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/n7a9bv.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -406,7 +407,7 @@ tag:
 # About Page
 #---------------------------
 about:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/4xvpqo.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/4xvpqo.png?w=1920&fmt=webp
   avatar: /img/avatar.png
   name: Fluid
   introduce: 简洁至上 / 丰富配置 / 充满活力
@@ -425,7 +426,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/post.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -434,7 +435,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/g8xjqe.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/g8xjqe.png?w=1920&fmt=webp
 
 
 #---------------------------
@@ -443,7 +444,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://rmt.dogedoge.com/fetch/fluid/storage/bg/73twhs.png?w=1920&fmt=webp
+  banner_img: https://fluid.s3.bitiful.net/bg/73twhs.png?w=1920&fmt=webp
   items:  # intro 与 image 可省略
     - {
       title: 'Install Fluid',

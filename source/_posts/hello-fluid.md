@@ -1,7 +1,7 @@
 ---
 title: Hello Fluid
 date: 2020-04-22 22:22:22
-index_img: https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp
+index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: 主题示例
 tags:
   - 示例
@@ -54,8 +54,8 @@ type Map struct {
 
 ## 表格
 
-| Header 1 | Header 2 | Header 3 |
-| --- | --- | --- |
+| Left | Center | Right |
+|:---|:---:|---:|
 | Key 1 | Value 1 | Comment 1 |
 | Key 2 | Value 2 | Comment 2 |
 | Key 3 | Value 3 | Comment 3 |
@@ -74,22 +74,21 @@ Fluid 相较于其他主题的优势：
 
 Fluid 功能特性：
 
-- 图片懒加载
-- 自定义代码高亮方案
-- 内置多语言
-- 支持多款评论插件
-- 支持使用数据文件存放配置
-- 自定义静态资源 CDN
-- 内置文章搜索
-- 页脚备案信息
-- 网页访问统计
+- 无比详实的[用户文档](https://hexo.fluid-dev.com/docs/)
+- 页面组件懒加载
+- 多种代码高亮方案
+- 多语言配置
+- 内置多款评论插件
+- 内置网页访问统计
+- 内置文章本地搜索
+- 支持暗色模式
+- 支持脚注语法
 - 支持 LaTeX 数学公式
 - 支持 mermaid 流程图
-- 音乐播放器
 
 ## 图片
 
-![](https://rmt.dogedoge.com/fetch/fluid/storage/post.png?w=1280&fmt=webp)
+![这是图片描述](https://fluid.s3.bitiful.net/bg/post.png?w=1280&fmt=webp)
 
 ## LaTex
 
@@ -160,7 +159,7 @@ Class08 <--> C2: Cool label
 
 ### 便签
 
-{% note info %}
+{% note primary %}
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
@@ -168,30 +167,49 @@ Class08 <--> C2: Cool label
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
-{% note primary %}
+{% note danger %}
 这里可以写文字 或者 `markdown`
 {% endnote %}
 
 ### 行内标签
 
-{% label info @行内标签 %} {% label warning @行内标签 %} {% label primary @行内标签 %}
+{% label primary @行内标签 %} {% label warning @行内标签 %} {% label danger @行内标签 %}
 
 ### 勾选框
 
-{% cb 主要是解决一些 Renderer 不支持勾选, true %}
+{% cb 内置插件，主要是解决一些 Renderer 不支持勾选, true %}
+{% cb 内置插件，主要是解决一些 Renderer 不支持勾选, true, false, false %}
 
 ### 按钮
 
 {% btn javascript:;, 支持链接 %}
 
+### 折叠块
+
+{% fold @折叠块的标题 %}
+折叠内容，可以写文字 或者 `markdown`
+{% endfold %}
+
+{% fold info @折叠代码块 %}
+```python
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
+```
+{% endfold %}
+
 ### 组图
 
 {% gi 5 3-2 %}
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
-  ![](https://rmt.dogedoge.com/fetch/fluid/storage/hello-fluid/cover.png?w=480&fmt=webp)
+  ![图1](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![图2](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![图3](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![图4](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+  ![图5](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
 {% endgi %}
 
 ### 脚注
